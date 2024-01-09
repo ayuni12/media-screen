@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar javaScript</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            font-size: 1.125em;
+            line-height: 1.6;
+            color: bisque;
+            padding: 2em;
+        }
+        .hero {
+            display: grid;
+            grid-gap: 2em;
+            align-items: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (min-width: 960px) {
+            .hero {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Hello baby</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt animi accusantium, eveniet inventore ipsam architecto nostrum odit fuga odio ipsa obcaecati eum debitis fugiat minima repudiandae nihil voluptate totam?
+
+            </p>
+        </div>
+        <picture>
+            <source media="(min-width: 960px)" srcset="img/gambar3.jpg" sizes="50vw">
+            <source media="(min-width: 600px)" srcset="img/gambar1.png">
+            <img src="img/gambar2.jpg" alt="doraemon">
+        </picture>
+    </div>
+</body>
+</html> 
